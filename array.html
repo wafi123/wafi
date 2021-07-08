@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>array</title>
+</head>
+<body>
+    <p id="ar"></p>
+      <script type="text/javascript">
+      	
+         var arr=[1,3,5,2,4];
+           var leng=arr.length;
+
+            for(i=leng;i<2*leng;i++){
+
+               arr[i]= arr[i-leng];
+               document.getElementById("ar").innerHTML=arr;
+            }
+
+      </script>
+
+</body>
+</html>

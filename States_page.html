@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<title>States</title>
+</head>
+<body>
+	<br>
+      <ul>
+      	<div>
+      	 <li data-toggle="dropdown" id="star">Kerala</a></li>
+      	   <div class="dropdown-menu">
+      	   	<p class="dropdown-item">Trivandrum</p>
+      	   </div>
+      	</div>
+      	<br>
+      	<div>
+      	  <li data-toggle="dropdown" id="star1">Tamil Nadu</li>
+      	     <div class="dropdown-menu">
+               <p class="dropdown-item">Chennai</p>
+      	     </div>
+        </div>
+        <br>
+        <div>
+      	   <li data-toggle="dropdown" id="star2">Karnataka</li>
+      	      <div class="dropdown-menu">
+      	      	<p class="dropdown-item">Bengaluru</p>
+      	      </div>
+      	</div>
+      	<br>
+      	<div>
+      	    <li data-toggle="dropdown" id="star3">Himachal Pradesh</li>
+      	       <div class="dropdown-menu">
+      	       	<p class="dropdown-item">Shimla (summer)</p>
+      	       	<p class="dropdown-item">Dharmashala (winter)</p>
+      	       </div>
+      	</div>
+      	<br>
+      	<div>
+      	     <li data-toggle="dropdown" id="star4">Arunachal Pradesh</li>
+      	        <div class="dropdown-menu">
+      	        	<p class="dropdown-item">Itanagar</p>
+      	        </div>
+      	</div>
+      </ul>
+             <div>
+             	<button class="btn btn-info" type="button" onclick="change()">Click here</button>
+             </div>
+
+              <script type="text/javascript">
+         function change() {
+
+            var str1 = document.getElementById("star").innerHTML;
+            var str2 = str1+"*";
+            document.getElementById("star").innerHTML= str2;
+
+            var str3 = document.getElementById("star1").innerHTML;
+            var str4 = str3+"*";
+            document.getElementById("star1").innerHTML= str4;
+
+            var str5 = document.getElementById("star2").innerHTML;
+            var str6 = str5+"*";
+            document.getElementById("star2").innerHTML= str6;
+
+            var str7 = document.getElementById("star3").innerHTML;
+            var str8 = str7+"*";
+            document.getElementById("star3").innerHTML= str8;
+
+            var str9 = document.getElementById("star4").innerHTML;
+            var str10 = str9+"*";
+            document.getElementById("star4").innerHTML= str10;
+         }
+         
+      </script>
+</body>
+</html>
